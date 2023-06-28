@@ -1,0 +1,17 @@
+{
+  "Types": [
+      "A", 
+	  "B",
+	  "C"
+  ],
+  "Categories": [
+      "X", 
+	  "Y",
+	  "Z"
+  ],
+  "Subjects": [
+      "D", 
+	  "E",
+	  "F"
+  ]
+}
