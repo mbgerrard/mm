@@ -44,9 +44,9 @@
   	},
   
   "MetamodelNodes": [
-	{"Id":1,"Class":"Stakeholders","Instance":"User"},
-	{"Id":2"Class":"Stakeholders","Instance":"MKT function"},
-	{"Id":3,"Class":"Stakeholders","Instance":"Manufacturing function"},
+	{"Id":"1","Class":"Stakeholders","Instance":"User"},
+	{"Id":"2","Class":"Stakeholders","Instance":"MKT function"},
+	{"Id":"3","Class":"Stakeholders","Instance":"Manufacturing function"},
 	{"Id":"4","Class":"Objects","Instance":"Device"},
 	{"Id":"5","Class":"Objects","Instance":"Controller"},
 	{"Id":"6","Class":"Objects","Instance":"Pod"},
