@@ -1,45 +1,8 @@
-{
-  "MetamodelSummary": {
+{"MetamodelSummary": {
 	"Stakeholders":	[
 		"User",
 		"MKT function",
 		"Manufacturing function"
-	],
-		
-	"Objects": [
-		"Device",
-		"Controller",
-		"Pod",
-		"Container",
-		"Needle"
-	],
-		
-	"StakeholderCats": [
-		"Unboxing",
-		"Ease of use",
-		"Training"
-	],
-		
-	"TechReqCats": [
-		"Environmental",
-		"Function",
-		"Performance",
-		"Durability",
-		"Serviceability",
-		"Transportation"
-	],
-		
-	"VerificationMethods": [
-		"Inspection",
-		"Demonstration",
-		"Test",
-		"Analysis"
-	],
-		
-	"Tags": [
-		"RCM",
-		"Design Control",
-		"Usability"
 	]
   	}
 }
