@@ -1,17 +1,336 @@
 {
-  "Types": [
-      "A", 
-	  "B",
-	  "C"
-  ],
-  "Categories": [
-      "X", 
-	  "Y",
-	  "Z"
-  ],
-  "Subjects": [
-      "D", 
-	  "E",
-	  "F"
-  ]
+  "MetamodelSummary": {
+	"Stakeholders":	[
+		"User",
+		"MKT function",
+		"Manufacturing function"
+	],
+		
+	"Objects": [
+		"Device",
+		"Controller",
+		"Pod",
+		"Container",
+		"Needle"
+	],
+		
+	"StakeholderCats": [
+		"Unboxing",
+		"Ease of use",
+		"Training"
+	],
+		
+	"TechReqCats": [
+		"Environmental",
+		"Function",
+		"Performance",
+		"Durability",
+		"Serviceability",
+		"Transportation"
+	],
+		
+	"VerificationMethods": [
+		"Inspection",
+		"Demonstration",
+		"Test",
+		"Analysis"
+	],
+		
+	"Tags": [
+		"RCM",
+		"Design Control",
+		"Usability"
+	]
+  	},
+  
+  "MetamodelNodes": [
+	{"Id":"1","Class":"Stakeholders","Instance":"User"},
+	{"Id":"2","Class":"Stakeholders","Instance":"MKT function"},
+	{"Id":"3","Class":"Stakeholders","Instance":"Manufacturing function"},
+	{"Id":"4","Class":"Objects","Instance":"Device"},
+	{"Id":"5","Class":"Objects","Instance":"Controller"},
+	{"Id":"6","Class":"Objects","Instance":"Pod"},
+	{"Id":"7","Class":"Objects","Instance":"Container"},
+	{"Id":"8","Class":"Objects","Instance":"Needle"},
+	{"Id":"9","Class":"StakeholderCats","Instance":"Unboxing"},
+	{"Id":"10","Class":"StakeholderCats","Instance":"Ease of use"},
+	{"Id":"11","Class":"StakeholderCats","Instance":"Training"},
+	{"Id":"12","Class":"TechReqCats","Instance":"Environmental"},
+	{"Id":"13","Class":"TechReqCats","Instance":"Function"},
+	{"Id":"14","Class":"TechReqCats","Instance":"Performance"},
+	{"Id":"15","Class":"TechReqCats","Instance":"Durability"},
+	{"Id":"16","Class":"TechReqCats","Instance":"Serviceability"},
+	{"Id":"17","Class":"TechReqCats","Instance":"Transportation"},
+	{"Id":"18","Class":"VerificationMethods","Instance":"Inspection"},
+	{"Id":"19","Class":"VerificationMethods","Instance":"Demonstration"},
+	{"Id":"20","Class":"VerificationMethods","Instance":"Test"},
+	{"Id":"21","Class":"VerificationMethods","Instance":"Analysis"},
+	{"Id":"22","Class":"Tags","Instance":"RCM"},
+	{"Id":"23","Class":"Tags","Instance":"Design Control"},
+	{"Id":"24","Class":"Tags","Instance":"Usability"},
+	{"Id":"25","Class":"StakeholderReq","Instance":""},
+	{"Id":"26","Class":"TechReq","Instance":""}
+	],
+	
+"MetamodelRels": [		
+	{
+	"Type": "DEPENDS_ON",
+	"From": "TechReq",
+	"To": "StakeholderReq",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "DEPENDS_ON",
+	"From": "TechReq",
+	"To": "TechReq",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "EXPRESSES_A_DESIRE_OF",
+	"From": "StakeholderReq",
+	"To": "Stakeholders:User",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "EXPRESSES_A_DESIRE_OF",
+	"From": "StakeholderReq",
+	"To": "Stakeholders:MKT function",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "EXPRESSES_A_DESIRE_OF",
+	"From": "StakeholderReq",
+	"To": "Stakeholders:Manufacturing function",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "StakeholderReq",
+	"To": "StakeholderCats:Unboxing",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "StakeholderReq",
+	"To": "StakeholderCats:Ease of use",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "StakeholderReq",
+	"To": "StakeholderCats:Training",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "TechReq",
+	"To": "TechReqCats:Environmental",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "TechReq",
+	"To": "TechReqCats:Function",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "TechReq",
+	"To": "TechReqCats:Performance",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "TechReq",
+	"To": "TechReqCats:Durability",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "TechReq",
+	"To": "TechReqCats:Serviceability",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "BELONGS_TO",
+	"From": "TechReq",
+	"To": "TechReqCats:Transportation",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_VERIFIED_BY",
+	"From": "TechReq",
+	"To": "VerificationMethods:Inspection",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_VERIFIED_BY",
+	"From": "TechReq",
+	"To": "VerificationMethods:Demonstration",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_VERIFIED_BY",
+	"From": "TechReq",
+	"To": "VerificationMethods:Test",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_VERIFIED_BY",
+	"From": "TechReq",
+	"To": "VerificationMethods:Analysis",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_TAGGED_AS",
+	"From": "TechReq",
+	"To": "Tags:RCM",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_TAGGED_AS",
+	"From": "TechReq",
+	"To": "Tags:Design Control",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "IS_TAGGED_AS",
+	"From": "TechReq",
+	"To": "Tags:Usability",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "PARTIALLY_DEFINES",
+	"From": "TechReq",
+	"To": "Objects:Device",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "PARTIALLY_DEFINES",
+	"From": "TechReq",
+	"To": "Objects:Controller",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "PARTIALLY_DEFINES",
+	"From": "TechReq",
+	"To": "Objects:Pod",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "PARTIALLY_DEFINES",
+	"From": "TechReq",
+	"To": "Objects:Container",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	},
+	
+	{
+	"Type": "PARTIALLY_DEFINES",
+	"From": "TechReq",
+	"To": "Objects:Needle",
+	"FromValidMax": "-1",
+	"FromValidMin": "1",
+	"ToValidMax": "3",
+	"ToValidMin": "2",
+	}		
+	]  
 }
