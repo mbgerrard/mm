@@ -20,7 +20,7 @@
 		"Training"
 	],
 		
-	"TechReqCats": [
+	"TechnicalCats": [
 		"Environmental",
 		"Function",
 		"Performance",
@@ -56,12 +56,12 @@
 	{"Id":"9","Class":"StakeholderCats","Instance":"Unboxing"},
 	{"Id":"10","Class":"StakeholderCats","Instance":"Ease of use"},
 	{"Id":"11","Class":"StakeholderCats","Instance":"Training"},
-	{"Id":"12","Class":"TechReqCats","Instance":"Environmental"},
-	{"Id":"13","Class":"TechReqCats","Instance":"Function"},
-	{"Id":"14","Class":"TechReqCats","Instance":"Performance"},
-	{"Id":"15","Class":"TechReqCats","Instance":"Durability"},
-	{"Id":"16","Class":"TechReqCats","Instance":"Serviceability"},
-	{"Id":"17","Class":"TechReqCats","Instance":"Transportation"},
+	{"Id":"12","Class":"TechnicalCats","Instance":"Environmental"},
+	{"Id":"13","Class":"TechnicalCats","Instance":"Function"},
+	{"Id":"14","Class":"TechnicalCats","Instance":"Performance"},
+	{"Id":"15","Class":"TechnicalCats","Instance":"Durability"},
+	{"Id":"16","Class":"TechnicalCats","Instance":"Serviceability"},
+	{"Id":"17","Class":"TechnicalCats","Instance":"Transportation"},
 	{"Id":"18","Class":"VerificationMethods","Instance":"Inspection"},
 	{"Id":"19","Class":"VerificationMethods","Instance":"Demonstration"},
 	{"Id":"20","Class":"VerificationMethods","Instance":"Test"},
@@ -70,13 +70,13 @@
 	{"Id":"23","Class":"Tags","Instance":"Design Control"},
 	{"Id":"24","Class":"Tags","Instance":"Usability"},
 	{"Id":"25","Class":"StakeholderReq","Instance":""},
-	{"Id":"26","Class":"TechReq","Instance":""}
+	{"Id":"26","Class":"TechnicalReq","Instance":""}
 	],
 	
 "MetamodelRels": [		
 	{
 	"Type": "DEPENDS_ON",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "StakeholderReq",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -86,8 +86,8 @@
 	
 	{
 	"Type": "DEPENDS_ON",
-	"From": "TechReq",
-	"To": "TechReq",
+	"From": "TechnicalReq",
+	"To": "TechnicalReq",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
 	"ToValidMax": 3,
@@ -156,7 +156,7 @@
 	
 	{
 	"Type": "BELONGS_TO",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "TechReqCats:Environmental",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -166,7 +166,7 @@
 	
 	{
 	"Type": "BELONGS_TO",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "TechReqCats:Function",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -176,7 +176,7 @@
 	
 	{
 	"Type": "BELONGS_TO",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "TechReqCats:Performance",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -186,7 +186,7 @@
 	
 	{
 	"Type": "BELONGS_TO",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "TechReqCats:Durability",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -196,7 +196,7 @@
 	
 	{
 	"Type": "BELONGS_TO",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "TechReqCats:Serviceability",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -206,7 +206,7 @@
 	
 	{
 	"Type": "BELONGS_TO",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "TechReqCats:Transportation",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -216,7 +216,7 @@
 	
 	{
 	"Type": "IS_VERIFIED_BY",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "VerificationMethods:Inspection",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -226,7 +226,7 @@
 	
 	{
 	"Type": "IS_VERIFIED_BY",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "VerificationMethods:Demonstration",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -236,7 +236,7 @@
 	
 	{
 	"Type": "IS_VERIFIED_BY",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "VerificationMethods:Test",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -246,7 +246,7 @@
 	
 	{
 	"Type": "IS_VERIFIED_BY",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "VerificationMethods:Analysis",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -256,7 +256,7 @@
 	
 	{
 	"Type": "IS_TAGGED_AS",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Tags:RCM",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -266,7 +266,7 @@
 	
 	{
 	"Type": "IS_TAGGED_AS",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Tags:Design Control",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -276,7 +276,7 @@
 	
 	{
 	"Type": "IS_TAGGED_AS",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Tags:Usability",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -286,7 +286,7 @@
 	
 	{
 	"Type": "PARTIALLY_DEFINES",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Objects:Device",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -296,7 +296,7 @@
 	
 	{
 	"Type": "PARTIALLY_DEFINES",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Objects:Controller",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -306,7 +306,7 @@
 	
 	{
 	"Type": "PARTIALLY_DEFINES",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Objects:Pod",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -316,7 +316,7 @@
 	
 	{
 	"Type": "PARTIALLY_DEFINES",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Objects:Container",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
@@ -326,7 +326,7 @@
 	
 	{
 	"Type": "PARTIALLY_DEFINES",
-	"From": "TechReq",
+	"From": "TechnicalReq",
 	"To": "Objects:Needle",
 	"FromValidMax": -1,
 	"FromValidMin": 1,
