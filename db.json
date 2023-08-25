@@ -1,337 +1,404 @@
 {
-  "MetamodelSummary": {
-	"Stakeholders":	[
-		"User",
-		"MKT function",
-		"Manufacturing function"
-	],
-		
-	"Objects": [
-		"Device",
-		"Controller",
-		"Pod",
-		"Container",
-		"Needle"
-	],
-		
-	"StakeholderCats": [
-		"Unboxing",
-		"Ease of use",
-		"Training"
-	],
-		
-	"TechnicalCats": [
-		"Environmental",
-		"Function",
-		"Performance",
-		"Durability",
-		"Serviceability",
-		"Transportation"
-	],
-		
-	"VerificationMethods": [
-		"Inspection",
-		"Demonstration",
-		"Test",
-		"Analysis"
-	],
-	  "Tags": [
-		"RCM",
-		"Design Control",
-		"Usability"
-	]
-		
-	
-  	},
-  
-  "MetamodelNodes": [
-	{"Id":"1","Class":"Stakeholders","Instance":"User"},
-	{"Id":"2","Class":"Stakeholders","Instance":"MKT function"},
-	{"Id":"3","Class":"Stakeholders","Instance":"Manufacturing function"},
-	{"Id":"4","Class":"Objects","Instance":"Device"},
-	{"Id":"5","Class":"Objects","Instance":"Controller"},
-	{"Id":"6","Class":"Objects","Instance":"Pod"},
-	{"Id":"7","Class":"Objects","Instance":"Container"},
-	{"Id":"8","Class":"Objects","Instance":"Needle"},
-	{"Id":"9","Class":"StakeholderCats","Instance":"Unboxing"},
-	{"Id":"10","Class":"StakeholderCats","Instance":"Ease of use"},
-	{"Id":"11","Class":"StakeholderCats","Instance":"Training"},
-	{"Id":"12","Class":"TechnicalCats","Instance":"Environmental"},
-	{"Id":"13","Class":"TechnicalCats","Instance":"Function"},
-	{"Id":"14","Class":"TechnicalCats","Instance":"Performance"},
-	{"Id":"15","Class":"TechnicalCats","Instance":"Durability"},
-	{"Id":"16","Class":"TechnicalCats","Instance":"Serviceability"},
-	{"Id":"17","Class":"TechnicalCats","Instance":"Transportation"},
-	{"Id":"18","Class":"VerificationMethods","Instance":"Inspection"},
-	{"Id":"19","Class":"VerificationMethods","Instance":"Demonstration"},
-	{"Id":"20","Class":"VerificationMethods","Instance":"Test"},
-	{"Id":"21","Class":"VerificationMethods","Instance":"Analysis"},
-	{"Id":"22","Class":"Tags","Instance":"RCM"},
-	{"Id":"23","Class":"Tags","Instance":"Design Control"},
-	{"Id":"24","Class":"Tags","Instance":"Usability"},
-	{"Id":"25","Class":"StakeholderReq","Instance":""},
-	{"Id":"26","Class":"TechnicalReq","Instance":""}
-	],
-	
-"MetamodelRels": [		
-	{
-	"Type": "DEPENDS_ON",
-	"From": "TechnicalReq",
-	"To": "StakeholderReq",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "DEPENDS_ON",
-	"From": "TechnicalReq",
-	"To": "TechnicalReq",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "EXPRESSES_A_DESIRE_OF",
-	"From": "StakeholderReq",
-	"To": "Stakeholders:User",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "EXPRESSES_A_DESIRE_OF",
-	"From": "StakeholderReq",
-	"To": "Stakeholders:MKT function",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "EXPRESSES_A_DESIRE_OF",
-	"From": "StakeholderReq",
-	"To": "Stakeholders:Manufacturing function",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "StakeholderReq",
-	"To": "StakeholderCats:Unboxing",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "StakeholderReq",
-	"To": "StakeholderCats:Ease of use",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "StakeholderReq",
-	"To": "StakeholderCats:Training",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "TechnicalReq",
-	"To": "TechReqCats:Environmental",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "TechnicalReq",
-	"To": "TechReqCats:Function",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "TechnicalReq",
-	"To": "TechReqCats:Performance",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "TechnicalReq",
-	"To": "TechReqCats:Durability",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "TechnicalReq",
-	"To": "TechReqCats:Serviceability",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "BELONGS_TO",
-	"From": "TechnicalReq",
-	"To": "TechReqCats:Transportation",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_VERIFIED_BY",
-	"From": "TechnicalReq",
-	"To": "VerificationMethods:Inspection",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_VERIFIED_BY",
-	"From": "TechnicalReq",
-	"To": "VerificationMethods:Demonstration",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_VERIFIED_BY",
-	"From": "TechnicalReq",
-	"To": "VerificationMethods:Test",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_VERIFIED_BY",
-	"From": "TechnicalReq",
-	"To": "VerificationMethods:Analysis",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_TAGGED_AS",
-	"From": "TechnicalReq",
-	"To": "Tags:RCM",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_TAGGED_AS",
-	"From": "TechnicalReq",
-	"To": "Tags:Design Control",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "IS_TAGGED_AS",
-	"From": "TechnicalReq",
-	"To": "Tags:Usability",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "PARTIALLY_DEFINES",
-	"From": "TechnicalReq",
-	"To": "Objects:Device",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "PARTIALLY_DEFINES",
-	"From": "TechnicalReq",
-	"To": "Objects:Controller",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "PARTIALLY_DEFINES",
-	"From": "TechnicalReq",
-	"To": "Objects:Pod",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "PARTIALLY_DEFINES",
-	"From": "TechnicalReq",
-	"To": "Objects:Container",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	},
-	
-	{
-	"Type": "PARTIALLY_DEFINES",
-	"From": "TechnicalReq",
-	"To": "Objects:Needle",
-	"FromValidMax": -1,
-	"FromValidMin": 1,
-	"ToValidMax": 3,
-	"ToValidMin": 2
-	}		
-	]  
+   "SubjectTrees":{
+      "Stakeholder":{
+         "DisplayName":"Stakeholders",
+         "Required":true,
+         "TreeNodes":{
+            "82":{
+               "DisplayName":"Stakeholders",
+               "Parent":"",
+               "Children":[
+                  "83",
+                  "84"
+               ]
+            },
+            "83":{
+               "DisplayName":"Business",
+               "Parent":"82",
+               "Children":[
+                  
+               ]
+            },
+            "84":{
+               "DisplayName":"Customer",
+               "Parent":"82",
+               "Children":[
+                  "85",
+                  "86"
+               ]
+            },
+            "85":{
+               "DisplayName":"User",
+               "Parent":"84",
+               "Children":[
+                  
+               ]
+            },
+            "86":{
+               "DisplayName":"Maintenance",
+               "Parent":"84",
+               "Children":[
+                  
+               ]
+            }
+         }
+      },
+      "Technical":{
+         "DisplayName":"Components",
+         "Required":true,
+         "TreeNodes":{
+            "88":{
+               "DisplayName":"Device",
+               "Parent":"",
+               "Children":[
+                  "89",
+                  "90"
+               ]
+            },
+            "89":{
+               "DisplayName":"Controller",
+               "Parent":"88",
+               "Children":[
+                  
+               ]
+            },
+            "90":{
+               "DisplayName":"Pod",
+               "Parent":"88",
+               "Children":[
+                  "91",
+                  "92"
+               ]
+            },
+            "91":{
+               "DisplayName":"Container",
+               "Parent":"90",
+               "Children":[
+                  
+               ]
+            },
+            "92":{
+               "DisplayName":"Needle",
+               "Parent":"90",
+               "Children":[
+                  
+               ]
+            }
+         }
+      }
+   },
+   "Props":{
+      "CommonProps":{
+         "Title":{
+            "Type":"FREE_TEXT"as PropTypes,
+            "Name":"Title",
+            "DisplayName":"Title",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "02":{
+                  "Value":"Stakeholder requirement title text #1"
+               },
+               "03":{
+                  "Value":"Stakeholder requirement title text #2"
+               },
+               "04":{
+                  "Value":"Stakeholder requirement title text #3"
+               },
+               "05":{
+                  "Value":"Technical requirement title text #1"
+               },
+               "06":{
+                  "Value":"Technical requirement title text #2"
+               },
+               "07":{
+                  "Value":"Technical requirement title text #3"
+               },
+               "08":{
+                  "Value":"Technical requirement title text #4"
+               },
+               "09":{
+                  "Value":"Technical requirement title text #5"
+               },
+               "10":{
+                  "Value":"Technical requirement title text #6"
+               },
+               "11":{
+                  "Value":"Technical requirement title text #7"
+               },
+               "12":{
+                  "Value":"Technical requirement title text #8"
+               },
+               "13":{
+                  "Value":"Technical requirement title text #9"
+               },
+               "14":{
+                  "Value":"Technical requirement title text #10"
+               },
+               "15":{
+                  "Value":"Technical requirement title text #11"
+               },
+               "16":{
+                  "Value":"Technical requirement title text #12"
+               }
+            }
+         },
+         "Specification":{
+            "Type":"FREE_TEXT"as PropTypes,
+            "Name":"Specification",
+            "DisplayName":"Specification",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "18":{
+                  "Value":"Stakeholder requirement specification text #1"
+               },
+               "19":{
+                  "Value":"Stakeholder requirement specification text #2"
+               },
+               "20":{
+                  "Value":"Stakeholder requirement specification text #3"
+               },
+               "21":{
+                  "Value":"Technical requirement specification text #1"
+               },
+               "22":{
+                  "Value":"Technical requirement specification text #2"
+               },
+               "23":{
+                  "Value":"Technical requirement specification text #3"
+               },
+               "24":{
+                  "Value":"Technical requirement specification text #4"
+               },
+               "25":{
+                  "Value":"Technical requirement specification text #5"
+               },
+               "26":{
+                  "Value":"Technical requirement specification text #6"
+               },
+               "27":{
+                  "Value":"Technical requirement specification text #7"
+               },
+               "28":{
+                  "Value":"Technical requirement specification text #8"
+               },
+               "29":{
+                  "Value":"Technical requirement specification text #9"
+               },
+               "30":{
+                  "Value":"Technical requirement specification text #10"
+               },
+               "31":{
+                  "Value":"Technical requirement specification text #11"
+               },
+               "32":{
+                  "Value":"Technical requirement specification text #12"
+               }
+            }
+         },
+         "Comments":{
+            "Type":"FREE_TEXT"as PropTypes,
+            "Name":"Comments",
+            "DisplayName":"Comments",
+            "Modifiable":false,
+            "Required":false,
+            "Options":{
+               "34":{
+                  "Value":"Stakeholder requirement comments text #1"
+               },
+               "35":{
+                  "Value":"Stakeholder requirement comments text #2"
+               },
+               "36":{
+                  "Value":"Stakeholder requirement comments text #3"
+               },
+               "37":{
+                  "Value":"Technical requirement comments text #1"
+               },
+               "38":{
+                  "Value":"Technical requirement comments text #2"
+               },
+               "39":{
+                  "Value":"Technical requirement comments text #3"
+               },
+               "40":{
+                  "Value":"Technical requirement comments text #4"
+               },
+               "41":{
+                  "Value":"Technical requirement comments text #5"
+               },
+               "42":{
+                  "Value":"Technical requirement comments text #6"
+               },
+               "43":{
+                  "Value":"Technical requirement comments text #7"
+               },
+               "44":{
+                  "Value":"Technical requirement comments text #8"
+               },
+               "45":{
+                  "Value":"Technical requirement comments text #9"
+               },
+               "46":{
+                  "Value":"Technical requirement comments text #10"
+               },
+               "47":{
+                  "Value":"Technical requirement comments text #11"
+               },
+               "48":{
+                  "Value":"Technical requirement comments text #12"
+               }
+            }
+         }
+      },
+      "StakeholderProps":{
+         "StakeholderCategory":{
+            "Type":"SELECT_TEXT"as PropTypes,
+            "Name":"StakeholderCategory",
+            "DisplayName":"Category",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "54":{
+                  "Value":"Unboxing"
+               },
+               "55":{
+                  "Value":"Ease of use"
+               },
+               "56":{
+                  "Value":"Training"
+               }
+            }
+         },
+         "UseErrorMitigation":{
+            "Type":"TAG"as PropTypes,
+            "Name":"UseErrorMitigation",
+            "DisplayName":"Use Error Mitigation",
+            "Modifiable":true,
+            "Required":true,
+            "Options":{
+               "58":{
+                  "Value":true
+               },
+               "59":{
+                  "Value":false
+               }
+            }
+         },
+         "Source":{
+            "Type":"FREE_TEXT"as PropTypes,
+            "Name":"Source",
+            "DisplayName":"Source",
+            "Modifiable":false,
+            "Required":false,
+            "Options":{
+               "50":{
+                  "Value":"Stakeholder requirement source text #1"
+               },
+               "51":{
+                  "Value":"Stakeholder requirement source text #2"
+               },
+               "52":{
+                  "Value":"Stakeholder requirement source text #3"
+               }
+            }
+         }
+      },
+      "TechnicalProps":{
+         "TechnicalCategory":{
+            "Type":"SELECT_TEXT"as PropTypes,
+            "Name":"TechnicalCategory",
+            "DisplayName":"Category",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "61":{
+                  "Value":"Environmental"
+               },
+               "62":{
+                  "Value":"Function"
+               },
+               "63":{
+                  "Value":"Performance"
+               },
+               "64":{
+                  "Value":"Durability"
+               },
+               "65":{
+                  "Value":"Serviceability"
+               },
+               "66":{
+                  "Value":"Transportation"
+               }
+            }
+         },
+         "VerificationMethod":{
+            "Type":"SELECT_TEXT"as PropTypes,
+            "Name":"VerificationMethod",
+            "DisplayName":"Verification Method",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "68":{
+                  "Value":"Inspection"
+               },
+               "69":{
+                  "Value":"Demonstration"
+               },
+               "70":{
+                  "Value":"Test"
+               },
+               "71":{
+                  "Value":"Analysis"
+               }
+            }
+         },
+         "RCM":{
+            "Type":"TAG"as PropTypes,
+            "Name":"RCM",
+            "DisplayName":"RCM",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "73":{
+                  "Value":true
+               },
+               "74":{
+                  "Value":false
+               }
+            }
+         },
+         "DesignControl":{
+            "Type":"TAG"as PropTypes,
+            "Name":"DesignControl",
+            "DisplayName":"Design Control",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "76":{
+                  "Value":true
+               },
+               "77":{
+                  "Value":false
+               }
+            }
+         },
+         "Usability":{
+            "Type":"TAG"as PropTypes,
+            "Name":"Usability",
+            "DisplayName":"Usability",
+            "Modifiable":false,
+            "Required":true,
+            "Options":{
+               "79":{
+                  "Value":true
+               },
+               "80":{
+                  "Value":false
+               }
+            }
+         }
+      }
+   }
 }
