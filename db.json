@@ -90,7 +90,7 @@
    "Props":{
       "CommonProps":{
          "Title":{
-            "Type":"FREE_TEXT"as PropTypes,
+            "Type":"FREE_TEXT",
             "Name":"Title",
             "DisplayName":"Title",
             "Modifiable":false,
@@ -144,7 +144,7 @@
             }
          },
          "Specification":{
-            "Type":"FREE_TEXT"as PropTypes,
+            "Type":"FREE_TEXT",
             "Name":"Specification",
             "DisplayName":"Specification",
             "Modifiable":false,
@@ -198,7 +198,7 @@
             }
          },
          "Comments":{
-            "Type":"FREE_TEXT"as PropTypes,
+            "Type":"FREE_TEXT",
             "Name":"Comments",
             "DisplayName":"Comments",
             "Modifiable":false,
@@ -254,7 +254,7 @@
       },
       "StakeholderProps":{
          "StakeholderCategory":{
-            "Type":"SELECT_TEXT"as PropTypes,
+            "Type":"SELECT_TEXT",
             "Name":"StakeholderCategory",
             "DisplayName":"Category",
             "Modifiable":false,
@@ -272,7 +272,7 @@
             }
          },
          "UseErrorMitigation":{
-            "Type":"TAG"as PropTypes,
+            "Type":"TAG",
             "Name":"UseErrorMitigation",
             "DisplayName":"Use Error Mitigation",
             "Modifiable":true,
@@ -287,7 +287,7 @@
             }
          },
          "Source":{
-            "Type":"FREE_TEXT"as PropTypes,
+            "Type":"FREE_TEXT",
             "Name":"Source",
             "DisplayName":"Source",
             "Modifiable":false,
@@ -307,7 +307,7 @@
       },
       "TechnicalProps":{
          "TechnicalCategory":{
-            "Type":"SELECT_TEXT"as PropTypes,
+            "Type":"SELECT_TEXT",
             "Name":"TechnicalCategory",
             "DisplayName":"Category",
             "Modifiable":false,
@@ -334,7 +334,7 @@
             }
          },
          "VerificationMethod":{
-            "Type":"SELECT_TEXT"as PropTypes,
+            "Type":"SELECT_TEXT",
             "Name":"VerificationMethod",
             "DisplayName":"Verification Method",
             "Modifiable":false,
@@ -355,7 +355,7 @@
             }
          },
          "RCM":{
-            "Type":"TAG"as PropTypes,
+            "Type":"TAG",
             "Name":"RCM",
             "DisplayName":"RCM",
             "Modifiable":false,
@@ -370,7 +370,7 @@
             }
          },
          "DesignControl":{
-            "Type":"TAG"as PropTypes,
+            "Type":"TAG",
             "Name":"DesignControl",
             "DisplayName":"Design Control",
             "Modifiable":false,
@@ -385,7 +385,7 @@
             }
          },
          "Usability":{
-            "Type":"TAG"as PropTypes,
+            "Type":"TAG",
             "Name":"Usability",
             "DisplayName":"Usability",
             "Modifiable":false,
